@@ -1,27 +1,24 @@
-<body>
-  {{ partial "header" . }}
-  {{ partial "nav" . }}
-  <section class="section">
-    <div class="container">
-      {{ range sort .Paginator.Pages }}
-      <article>
-        <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
-        <h2 class="subtitle is-6">{{ .Date.Format "January 2, 2006" }}</h2>
-        {{ if .Params.tags }}
-        {{ partial "tags" .Params.tags }}
-        {{ end }}
-        <div class="content">
-          {{ .Summary | plainify | safeHTML }}
-          {{ if .Truncated }}
-          ...
-          <br/>
-          <a class="button" style="margin-top: 10px;">Read More</a>
-          {{ end }}
-        </div>
-      </article>
+ <section class="section">
+  <div class="container">
+    {{ range sort .Paginator.Pages }}
+    <article>
+      <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
+      <h2 class="subtitle is-6">{{ .Date.Format "January 2, 2006" }}</h2>
+      {{ if .Params.tags }}
+      {{ partial "tags" .Params.tags }}
       {{ end }}
-    </div>
-  </section>
-  {{ partial "pager" . }}
-  {{ partial "footer" . }}
-</body>
+      <div class="content">
+        {{ .Summary | plainify | safeHTML }}
+        {{ if .Truncated }}
+        ...
+        <br/>
+        <a class="button" href="{{ .Permalink }}" style="margin-top: 10px;">Read More</a>
+        {{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+ {{ partial "pager" . }}
+
+
