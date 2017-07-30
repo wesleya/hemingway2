@@ -1,8 +1,30 @@
-<section class="section">
-  <div class="container has-text-centered">
-    <p>{{ .Site.Copyright | safeHTML }}</p>
+<footer class="footer">
+  <div class="container">
+    <div class="content">
+      <div class="columns">
+        <div class="column is-two-thirds-desktop">
+          <div class="columns is-mobile">
+            <div class="column">
+              Home
+            </div>
+            <div class="column">
+              Posts
+            </div>
+            <div class="column">
+              About
+            </div>
+            <div class="column">
+              Terms
+            </div>
+            <div class="column">
+              Privacy
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+</footer>
 {{ if .Site.GoogleAnalytics }}
 {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}

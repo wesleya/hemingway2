@@ -1,16 +1,74 @@
 {{ define "main" }}
-    <section class="hero" >
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
-                    {{ .Site.Title }}
-                </h1>
-                <h2 class="subtitle">
-                    {{ .Site.Params.Subtitle }}
-                </h2>
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title" style="font-family: 'Eczar', serif; font-size: 120px;">
+                {{ .Site.Title }}
+            </h1>
+            <h2 class="subtitle">
+                {{ .Site.Params.Subtitle }}
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Hero title
+            </h1>
+            <h2 class="subtitle">
+                Hero subtitle
+            </h2>
+        </div>
+    </div>
+</section>
+
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title">
+                            “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+                        </p>
+                        <p class="subtitle">
+                            Jeff Atwood
+                        </p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <span>View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a></span>
+                        </p>
+                        <p class="card-footer-item">
+                            <span>Share on <a href="#">Facebook</a></span>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title">
+                            “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+                        </p>
+                        <p class="subtitle">
+                            Jeff Atwood
+                        </p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <span>View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a></span>
+                        </p>
+                        <p class="card-footer-item">
+                            <span>Share on <a href="#">Facebook</a></span>
+                        </p>
+                    </footer>
+                </div>
             </div>
         </div>
-    </section>
-
-    {{ template "theme/_default/list.html" . }}
+    </div>
+</div>
 {{ end }}
