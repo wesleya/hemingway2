@@ -1,14 +1,20 @@
 {{ define "main" }}
-  <section class="section">
-    <div class="container">
-      <h2 class="subtitle is-6">{{ .Date.Format "January 2, 2006" }}</h2>
-      <h1 class="title">{{ .Title }}</h1>
-      {{ if .Params.tags }}
-      {{ partial "tags" .Params.tags }}
-      {{ end }}
+<div class="container">
+  <div class="card">
+    <div class="card-content">
+      <div class="media">
+        <div class="media-content">
+          <p class="title is-4">{{ .Title }}</p>
+          <p class="subtitle is-6"></p>
+        </div>
+      </div>
+
       <div class="content">
         {{ .Content }}
+        <br>
+        <small>Posted: {{ .Date.Format "January 2, 2006" }}</small>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 {{ end }}

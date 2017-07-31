@@ -6,14 +6,14 @@
           {{ if .Paginator.HasPrev }}
           <a class="button" href="{{ .Paginator.Prev.URL }}">
             <span class="icon is-small is-marginless">
-              <i class="fa fa-angle-left"></i>
+              <i class="fal fa-fast-backward"></i>
             </span>
             Newer
           </a>
           {{ else }}
           <a class="button" disabled>
             <span class="icon is-small is-marginless">
-              <i class="fa fa-angle-left"></i>
+              <i class="fal fa-fast-backward"></i>
             </span>
             Newer
           </a>
@@ -26,14 +26,14 @@
           <a class="button" href="{{ .Paginator.Next.URL }}">
             Older
             <span class="icon is-small is-marginless">
-              <i class="fa fa-angle-right"></i>
+              <i class="fal fa-fast-forward"></i>
             </span>
           </a>
           {{ else }}
           <a class="button" disabled>
             Older
             <span class="icon is-small is-marginless">
-              <i class="fa fa-angle-right"></i>
+              <i class="fal fa-fast-forward"></i>
             </span>
           </a>
           {{ end }}
