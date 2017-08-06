@@ -2,7 +2,7 @@
 
 <section class="section">
   <div class="container">
-    <h1 class="title is-1">{{ .Title }}</h1>
+    <h1 class="title is-2">{{ .Title }}</h1>
 
     {{ range sort .Paginator.Pages }}
 
@@ -10,7 +10,7 @@
       <div class="card-content">
         <div class="media">
           <div class="media-content">
-            <p class="title is-4">John Smith</p>
+            <h2 class="title is-4"><a href="{{ .Permalink }}">{{ .Params.Title }}</a></h2>
             <p class="subtitle is-6">By {{ .Params.Author }}</p>
           </div>
         </div>
