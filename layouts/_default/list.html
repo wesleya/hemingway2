@@ -1,13 +1,7 @@
 {{ define "main" }}
 
   <div class="container is-widescreen">
-    <div class="card is-shadowless">
-      <div class="card-content">
-        <h1 class="title is-2">{{ .Title }}</h1>
-      </div>
-    </div>
-
-
+    
     {{ range sort .Paginator.Pages }}
 
     <div class="card">
