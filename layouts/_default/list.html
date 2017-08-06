@@ -1,8 +1,12 @@
 {{ define "main" }}
 
-<section class="section">
-  <div class="container">
-    <h1 class="title is-2">{{ .Title }}</h1>
+  <div class="container is-widescreen">
+    <div class="card is-shadowless">
+      <div class="card-content">
+        <h1 class="title is-2">{{ .Title }}</h1>
+      </div>
+    </div>
+
 
     {{ range sort .Paginator.Pages }}
 
@@ -30,7 +34,7 @@
     <br/>
     {{ end }}
   </div>
-</section>
+
  {{ partial "pager" . }}
 
 {{ end }}
