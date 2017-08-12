@@ -4,6 +4,9 @@
     <div class="card">
       <div class="card-content">
         <h1 class="subtitle is-size-5-mobile is-size-4-tablet is-size-3-desktop">{{ .Title }}</h1>
+        <h2 class="subtitle is-size-6-mobile is-size-5-tablet is-size-4-desktop">
+          By {{ .Params.Author }}
+        </h2>
 
         <div class="content">
 
@@ -11,6 +14,9 @@
 
           <br/>
 
+          <p>
+            <small>Posted: {{ .Date.Format "January 2, 2006" }}</small>
+          </p>
         </div>
       </div>
     </div>

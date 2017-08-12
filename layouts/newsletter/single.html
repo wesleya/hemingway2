@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+  <div class="container is-widescreen">
+    <div class="card">
+      <div class="card-content">
+        <h1 class="subtitle is-size-5-mobile is-size-4-tablet is-size-3-desktop">{{ .Title }}</h1>
+
+
+        <div class="content">
+
+          <p>Want to be notified when new book breakdowns are posted? Signup for the newsletter!</p>
+          <p>I'll send out an update whenever I've got a couple new posts up. I'll never share this email with anyone else.</p>
+
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+            <form action="//bookbreakdowns.us16.list-manage.com/subscribe/post?u=b16f486366063dd70c4328eb9&amp;id=5a500ff5b4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+
+                <div class="mc-field-group field">
+                  <label for="mce-EMAIL" class="label">Email Address </label>
+                    <div class="control">
+                      <input type="email" value="" name="EMAIL" class="required email input" id="mce-EMAIL" required>
+                    </div>
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b16f486366063dd70c4328eb9_5a500ff5b4" tabindex="-1" value=""></div>
+                <div class="clear control">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!--End mc_embed_signup-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br/>
+
+{{ end }}
