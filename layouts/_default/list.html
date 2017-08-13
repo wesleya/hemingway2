@@ -10,17 +10,32 @@
     <div class="card">
       <div class="card-content">
         <div class="media">
+          <figure class="media-left is-hidden-tablet">
+            <p class="image is-64x64">
+              <a  href="{{ .Params.Amazon }}">
+                <img src="{{ .Params.cover }}" alt="Image">
+              </a>
+            </p>
+          </figure>
           <div class="media-content">
             <h2 class="title is-5"><a href="{{ .Permalink }}">{{ .Params.shortTitle }}</a></h2>
             <p class="subtitle is-6">By {{ .Params.Author }}</p>
           </div>
         </div>
-
-        <div class="content">
-          {{ .Summary | plainify | safeHTML }}
-          ...
-          <br/>
-          <small>Posted: {{ .Date.Format "January 2, 2006" }}</small>
+        <div class="media">
+          <figure class="media-left is-hidden-mobile">
+            <p class="image is-75x75">
+              <a  href="{{ .Params.Amazon }}">
+                <img src="{{ .Params.cover }}" alt="Image">
+              </a>
+            </p>
+          </figure>
+          <div class="media-content">
+            {{ .Summary | plainify | safeHTML }}
+            ...
+            <br/>
+            <small>Posted: {{ .Date.Format "January 2, 2006" }}</small>
+          </div>
         </div>
       </div>
       <footer class="card-footer">
