@@ -3,8 +3,8 @@
 <section class="section">
 <div class="container">
   <h1 class="page-title is-size-4-mobile is-size-3-tablet is-size-2-desktop">{{ .Title }}</h1>
-  <h2 class="page-subtitle is-size-5-mobile is-size-4-tablet is-size-3-desktop">
-    By {{ .Params.Author }}
+  <h2 class="page-subtitle is-size-6-mobile is-size-5-tablet is-size-5-desktop">
+    By: {{ .Params.Author }} | Posted: {{ .Date.Format "January 2, 2006" }} | <a href="{{.Params.Amazon}}">Buy This Book on Amazon</a>
   </h2>
 
   <div class="content">
@@ -12,7 +12,7 @@
 
     <br/>
 
-    <small>Posted: {{ .Date.Format "January 2, 2006" }}</small>
+    <a href="{{.Params.Amazon}}" class="button is-outlined is-primary">Buy This Book on Amazon</a>
 
   </div>
 </div>
