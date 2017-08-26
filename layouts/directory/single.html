@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<section class="section">
+    <div class="container">
+
+        <h1 class="page-title is-size-3-mobile is-size-3-tablet is-size-2-desktop">{{ .Title }}</h1>
+
+        <div class="content">
+            <p>this is the directory list</p>
+
+            {{.Content}}
+            {{ range .Data.Pages.GroupBy "Params.Tag" }}
+            <h3>{{ .Key }}</h3>
+            <ul>
+                {{ range .Pages }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+
+        </div>
+    </div>
+</section>
+
+<br/>
+
+{{ end }}
