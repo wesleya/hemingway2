@@ -1,13 +1,14 @@
 {{ define "main" }}
 <section class="hero is-primary">
     <div class="hero-body">
-        <div class="container">
+        <div class="container has-text-centered">
             <h1 class="title is-size-4-mobile is-size-3-tablet is-size-2-desktop has-text-centered">
                 It's Like Cliffs Notes For Your Life!
             </h1>
 	    <h2 class="subtitle is-size-5-mobile is-size-4-tablet is-size-3-desktop has-text-centered">
-		    Understand a book in minutes, just read the book breakdown!
+		    Understand a book in minutes, just read my book breakdown!
 	    </h2>
+	    <a class="button is-large is-primary is-inverted is-outlined" href="/post">Browse Now</a>
         </div>
 	<div class="container">
 	    {{ partial "landing-image" . }}
@@ -30,7 +31,7 @@
                     <div class="card-content">
                         <div clas="content">
                             <p class="subtitle has-text-centered">
-                                <a>I read</a> self help books all day. Cause I have no life.
+                                <span class="has-text-primary">I read</span> self help books all day. Cause I have no life.
                             </p>
                         </div>
                     </div>
@@ -47,7 +48,7 @@
                     <div class="card-content">
                         <div class="content">
                             <p class="subtitle has-text-centered">
-                                <a>I take notes</a> on what I read. Cause I can't remember things.
+			    <span class="has-text-primary">I take notes</span> on what I read. Cause I can't remember things.
                             </p>
                         </div>
                     </div>
@@ -64,7 +65,7 @@
                     <div class="card-content">
                         <div clas="content">
                             <p class="subtitle has-text-centered">
-                                <a>I share</a> those notes here with you. Cause why not right?!
+                                <span class="has-text-primary">I share</span> those notes here with you. Cause why not right?!
                             </p>
                         </div>
                     </div>
@@ -74,7 +75,7 @@
     </div>
 </div>
 
-<div class="section">
+<div class="section landing-page-section">
     <div class="container">
         <h1 class="subtitle is-size-4-mobile is-size-3-tablet is-size-2-desktop has-text-centered">Short and to the Point</h1>
         <div class="columns">
